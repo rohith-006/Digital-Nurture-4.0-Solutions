@@ -1,0 +1,14 @@
+SET SERVEROUTPUT ON;
+
+BEGIN
+    FOR cust_rec IN (SELECT CUSTOMER_ID FROM CUSTOMERS WHERE BALANCE > 10000) LOOP
+        UPDATE CUSTOMERS
+        SET ISVIP = 'TRUE'
+        WHERE CUSTOMER_ID = cust_rec.CUSTOMER_ID;
+
+        DBMS_OUTPUT.PUT_LINE('Promoted Customer ID ' || cust_rec.CUSTOMER_ID || ' to VIP status.');
+    END LOOP;
+
+    COMMIT;
+END;
+/
