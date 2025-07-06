@@ -1,0 +1,31 @@
+1. JPA (Java Persistence API)
+JPA is a Java EE specification for Object-Relational Mapping (ORM).
+
+It defines how Java objects map to database tables using annotations and interfaces.
+
+JPA is only an interface — it needs an implementation like Hibernate or EclipseLink.
+
+
+
+2. Hibernate
+Hibernate is the most popular JPA provider.
+
+Can be used:
+
+As a JPA implementation (standard way).
+
+With its own native APIs for more flexibility.
+
+Offers advanced features like custom joins, caching, lazy loading, and native SQL support.
+
+
+
+3. Spring Data JPA
+A Spring abstraction built on top of JPA.
+
+Simplifies data access by providing prebuilt repository interfaces (like JpaRepository).
+
+Handles CRUD operations, pagination, and queries with almost zero boilerplate code.
+
+Internally still uses a JPA provider like Hibernate.
+
