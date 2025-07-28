@@ -1,0 +1,43 @@
+.App {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  min-height: 100vh;
+}
+
+.App-logo {
+  height: 100px;
+  margin-top: 2rem;
+  animation: App-logo-bounce 3s infinite ease-in-out;
+}
+
+.App-header {
+  background: linear-gradient(135deg, #007cf0, #00dfd8);
+  padding: 2rem;
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 700px;
+}
+
+.App-link {
+  color: #ff6b6b;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.App-link:hover {
+  color: #ff3b3b;
+}
+
+@keyframes App-logo-bounce {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(10deg);
+  }
+}
